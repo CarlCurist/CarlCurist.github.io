@@ -2,7 +2,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>jQuery+Html5实现唯美表白动画代码</title>
+    <title>A letter from your loyal knight </title>
     <link type="text/css" rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jscex.min.js"></script>
@@ -15,9 +15,10 @@
     <script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
 </head>
 <body>
-    <audio autoplay="autopaly">
+    <!-- <audio autoplay="autopaly">
         <source src="./Beautiful-in-white.mp3" type="audio/mp3" />
-    </audio>
+    </audio> -->
+    <audio preload autoplay src="./Beautiful-in-white.mp3"></audio>
     <div id="main">
         <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(
             <a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(
@@ -185,9 +186,9 @@
             }));
             var textAnimate = eval(Jscex.compile("async", function () {
                 var together = new Date();
-                together.setFullYear(2014, 7, 15); //时间年月日
-                together.setHours(16); //小时	
-                together.setMinutes(53); //分钟
+                together.setFullYear(2021, 7, 25); //时间年月日
+                together.setHours(23); //小时	
+                together.setMinutes(11); //分钟
                 together.setSeconds(0); //秒前一位
                 together.setMilliseconds(2); //秒第二位
 
@@ -211,8 +212,8 @@
             runAsync().start();
         })();
     </script>
-    <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    <!-- <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
         <p>啵啵啵啵啵啵。</p>
-    </div>
+    </div> -->
 </body>
 </html>
