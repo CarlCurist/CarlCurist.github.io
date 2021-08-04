@@ -15,7 +15,7 @@
     <script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
 </head>
 <body>
-    <audio autoplay="autopaly">
+    <audio preload autoplay loop id="lottery">
         <source src="./Beautiful-in-white.mp3" type="audio/mp3" />
     </audio>
     <!-- <audio preload autoplay src="./Beautiful-in-white.mp3"></audio> -->
@@ -116,6 +116,7 @@
             var foot = tree.footer;
             var hold = 1;
             canvas.click(function (e) {
+                setInterval("toggleSound()",100);
                 var offset = canvas.offset(),
                     x, y;
                 x = e.pageX - offset.left;
@@ -211,6 +212,16 @@
             }));
             runAsync().start();
         })();
+
+
+    function toggleSound() {
+                var music = document.getElementById("lottery");//获取ID  
+                    
+                if (music.paused) { //判读是否播放  
+                    music.paused=false;
+                    music.play(); //没有就播放 
+                }    
+        }
     </script>
     <!-- <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
         <p>啵啵啵啵啵啵。</p>
